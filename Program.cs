@@ -13,6 +13,9 @@ namespace SimpleCalculator
             bool success = int.TryParse(input, out intUserInput);
             int result = intUserInput * 2;
             Console.WriteLine(result.ToString());
+
+            Person person1 = new Person();
+            Person person2 = new Person();
         }
     }
 }
