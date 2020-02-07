@@ -14,6 +14,7 @@ namespace SimpleCalculator
             int result = intUserInput * 2;
             Console.WriteLine(result.ToString());
 
+            Person.greet();
             Person person1 = new Person();
             Console.WriteLine(person1.getAge());
             person1.setAge(29);
