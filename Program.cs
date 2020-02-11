@@ -6,8 +6,8 @@ namespace SimpleCalculator
     {
         static void Main(string[] args)
         {
-            try{
-            
+            try
+            {
                 Console.WriteLine("Please enter a number.");
                 string textNumber_1 = Console.ReadLine();
                 Console.WriteLine("Please enter a second number.");
@@ -26,7 +26,7 @@ namespace SimpleCalculator
                 Console.WriteLine("There was an error: {0}", ex.Message);
             } finally
             {
-                Console.WriteLine("Deal with unhandled resources - open files etc.");
+                Console.WriteLine("Finally... Deal with unhandled resources - open files etc.");
             }
         } 
     }
