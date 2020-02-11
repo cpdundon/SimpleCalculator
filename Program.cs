@@ -6,6 +6,17 @@ namespace SimpleCalculator
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Please enter a number.");
+            string textNumber_1 = Console.ReadLine();
+            Console.WriteLine("Please enter a second number.");
+            string textNumber_2 = Console.ReadLine();
+            Console.WriteLine("Please enter an operation.");
+            string textOperation = Console.ReadLine();
+            
+            double number_1 = NumberConverter.Conversion(textNumber_1);
+            double number_2 = NumberConverter.Conversion(textNumber_2);
+
+            double result = Calculator.
             try
             {
                 Console.WriteLine("Please enter an integer.");
