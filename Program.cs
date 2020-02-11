@@ -16,7 +16,10 @@ namespace SimpleCalculator
             double number_1 = NumberConverter.Conversion(textNumber_1);
             double number_2 = NumberConverter.Conversion(textNumber_2);
 
-            double result = Calculator.
+            double result = Calculator.Process(number_1, number_2, textOperation);
+
+            Console.WriteLine("And the answer is... {0}", result);
+            
             try
             {
                 Console.WriteLine("Please enter an integer.");
