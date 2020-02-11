@@ -2,35 +2,16 @@ using System;
 
 namespace SimpleCalculator
 {
-    class NumberConverter
+    public class NumberConverter
     {
-        static double Conversion(number_1, number_2, textOperation)
+        public static double Conversion(string textNumber)
         {
-            double ret = -999999;
-
-            switch (textOperation)
+            double doubleNumber;
+            if (!double.TryParse(textNumber, out doubleNumber))
             {
-                case "+":
-                case "add":
-                    ret = number_1 + number_2;
-                    break;
-                case "-":
-                case "subtract":
-                    ret = number_1 - number_2;
-                    break;
-                case "*":
-                case "multiply":
-                    ret = number_1 * number_2;
-                    break;
-                case "/":
-                case "divide":
-                    ret = number_1 / number_2;
-                    break;
-                default:
-                    throw new Exception("Operand entry error - please enter a supported operation.");
+                throw new Exception("Could not parse the number entered.  Please enter a proper number.");
             }
-
-            return ret;
+            return doubleNumber;
         }
 
     }
