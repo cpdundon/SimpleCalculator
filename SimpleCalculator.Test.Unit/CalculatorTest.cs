@@ -1,5 +1,5 @@
 using System;
-//using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace SimpleCalculator.Test.Unit
 {
@@ -11,8 +11,8 @@ namespace SimpleCalculator.Test.Unit
             int number2 = 2;
             double result = 3;
 
-            
-
+            double ret = SimpleCalculator.Calculator.Process(number1, number2, "add");
+            assert
         }
     }
 }

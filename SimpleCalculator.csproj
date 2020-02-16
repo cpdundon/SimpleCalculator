@@ -9,6 +9,6 @@
     <Content Include="Program.cs" />
     <Content Include="Person.cs" />
     <Content Include="NumberConverter.cs" />
-    <Content Include="./SimpleCalculator.Test.Unit/SimpleCalculator.Test.Unit.csproj" />
+    
   </ItemGroup>
 </Project>
